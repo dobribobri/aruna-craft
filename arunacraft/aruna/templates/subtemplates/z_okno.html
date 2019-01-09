@@ -1,0 +1,882 @@
+
+{% if goods.0 %}
+    <div id="z0" class="link">
+     <a href="#line1"></a>
+      <div id="okno0">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.0.image.url }}" width="250px" height="250px"></td>
+		{% if goods.0.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.0.image_2 %}
+			<img src="{{ goods.0.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.0.image_3 %}
+			<img src="{{ goods.0.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.0.description }}</td>
+		</tr>
+		</table>
+		
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.0.old_price %}
+					<s>{{ goods.0.old_price }}</s>
+				{% else %}
+					{{ goods.0.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.0.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.0.id0|slugify }}" data-title="{{ goods.0.caption }}" data-price="{{ goods.0.price|floatformat:'0'|slugify }}" data-img="{{ goods.0.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line1"><span class="close"></span></a>
+		
+      </div>
+    </div>
+{% endif %}
+{% if goods.1 %}
+	<div id="z1" class="link">
+     <a href="#line1"></a>
+      <div id="okno1">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.1.image.url }}" width="250px" height="250px"></td>
+		{% if goods.1.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.1.image_2 %}
+			<img src="{{ goods.1.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.1.image_3 %}
+			<img src="{{ goods.1.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.1.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.1.old_price%}
+					<s>{{ goods.1.old_price }}</s>
+				{% else %}
+					{{ goods.1.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.1.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.1.id0|slugify }}" data-title="{{ goods.1.caption }}" data-price="{{ goods.1.price|floatformat:'0'|slugify }}" data-img="{{ goods.1.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line1"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.2 %}
+	<div id="z2" class="link">
+     <a href="#line1"></a>
+      <div id="okno2">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.2.image.url }}" width="250px" height="250px"></td>
+		{% if goods.2.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.2.image_2 %}
+			<img src="{{ goods.2.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.2.image_3 %}
+			<img src="{{ goods.2.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.2.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.2.old_price%}
+					<s>{{ goods.2.old_price }}</s>
+				{% else %}
+					{{ goods.2.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.2.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.2.id0|slugify }}" data-title="{{ goods.2.caption }}" data-price="{{ goods.2.price|floatformat:'0'|slugify }}" data-img="{{ goods.2.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line1"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.3 %}
+    <div id="z3" class="link">
+     <a href="#line1"></a>
+      <div id="okno3">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.3.image.url }}" width="250px" height="250px"></td>
+		{% if goods.3.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.3.image_2 %}
+			<img src="{{ goods.3.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.3.image_3 %}
+			<img src="{{ goods.3.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.3.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.3.old_price %}
+					<s>{{ goods.3.old_price }}</s>
+				{% else %}
+					{{ goods.3.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.3.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.3.id0|slugify }}" data-title="{{ goods.3.caption }}" data-price="{{ goods.3.price|floatformat:'0'|slugify }}" data-img="{{ goods.3.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line1"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.4 %}
+    <div id="z4" class="link">
+     <a href="#line2"></a>
+      <div id="okno4">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.4.image.url }}" width="250px" height="250px"></td>
+		{% if goods.4.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.4.image_2 %}
+			<img src="{{ goods.4.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.4.image_3 %}
+			<img src="{{ goods.4.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.4.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.4.old_price %}
+					<s>{{ goods.4.old_price }}</s>
+				{% else %}
+					{{ goods.4.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.4.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.4.id0|slugify }}" data-title="{{ goods.4.caption }}" data-price="{{ goods.4.price|floatformat:'0'|slugify }}" data-img="{{ goods.4.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line2"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.5 %}
+    <div id="z5" class="link">
+     <a href="#line2"></a>
+      <div id="okno5">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.5.image.url }}" width="250px" height="250px"></td>
+		{% if goods.5.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.5.image_2 %}
+			<img src="{{ goods.5.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.5.image_3 %}
+			<img src="{{ goods.5.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.5.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.5.old_price %}
+					<s>{{ goods.5.old_price }}</s>
+				{% else %}
+					{{ goods.5.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.5.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.5.id0|slugify }}" data-title="{{ goods.5.caption }}" data-price="{{ goods.5.price|floatformat:'0'|slugify }}" data-img="{{ goods.5.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line2"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.6 %}
+    <div id="z6" class="link">
+     <a href="#line2"></a>
+      <div id="okno6">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.6.image.url }}" width="250px" height="250px"></td>
+		{% if goods.6.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.6.image_2 %}
+			<img src="{{ goods.6.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.6.image_3 %}
+			<img src="{{ goods.6.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.6.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.6.old_price %}
+					<s>{{ goods.6.old_price }}</s>
+				{% else %}
+					{{ goods.6.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.6.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.6.id0|slugify }}" data-title="{{ goods.6.caption }}" data-price="{{ goods.6.price|floatformat:'0'|slugify }}" data-img="{{ goods.6.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line2"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.7 %}
+    <div id="z7" class="link">
+     <a href="#line2"></a>
+      <div id="okno7">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.7.image.url }}" width="250px" height="250px"></td>
+		{% if goods.7.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.7.image_2 %}
+			<img src="{{ goods.7.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.7.image_3 %}
+			<img src="{{ goods.7.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.7.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.7.old_price %}
+					<s>{{ goods.7.old_price }}</s>
+				{% else %}
+					{{ goods.7.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.7.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.7.id0|slugify }}" data-title="{{ goods.7.caption }}" data-price="{{ goods.7.price|floatformat:'0'|slugify }}" data-img="{{ goods.7.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line2"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.8 %}
+    <div id="z8" class="link">
+     <a href="#line3"></a>
+      <div id="okno8">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.8.image.url }}" width="250px" height="250px"></td>
+		{% if goods.8.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.8.image_2 %}
+			<img src="{{ goods.8.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.8.image_3 %}
+			<img src="{{ goods.8.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.8.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.8.old_price %}
+					<s>{{ goods.8.old_price }}</s>
+				{% else %}
+					{{ goods.8.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.8.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.8.id0|slugify }}" data-title="{{ goods.8.caption }}" data-price="{{ goods.8.price|floatformat:'0'|slugify }}" data-img="{{ goods.8.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line3"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.9 %}
+    <div id="z9" class="link">
+     <a href="#line3"></a>
+      <div id="okno9">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.9.image.url }}" width="250px" height="250px"></td>
+		{% if goods.9.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.9.image_2 %}
+			<img src="{{ goods.9.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.9.image_3 %}
+			<img src="{{ goods.9.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.9.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.9.old_price %}
+					<s>{{ goods.9.old_price }}</s>
+				{% else %}
+					{{ goods.9.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.9.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.9.id0|slugify }}" data-title="{{ goods.9.caption }}" data-price="{{ goods.9.price|floatformat:'0'|slugify }}" data-img="{{ goods.9.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line3"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.10 %}
+    <div id="z10" class="link">
+     <a href="#line3"></a>
+      <div id="okno10">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.10.image.url }}" width="250px" height="250px"></td>
+		{% if goods.10.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.10.image_2 %}
+			<img src="{{ goods.10.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.10.image_3 %}
+			<img src="{{ goods.10.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.10.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.10.old_price %}
+					<s>{{ goods.10.old_price }}</s>
+				{% else %}
+					{{ goods.10.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.10.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.10.id0|slugify }}" data-title="{{ goods.10.caption }}" data-price="{{ goods.10.price|floatformat:'0'|slugify }}" data-img="{{ goods.10.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line3"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.11 %}
+    <div id="z11" class="link">
+     <a href="#line3"></a>
+      <div id="okno11">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.11.image.url }}" width="250px" height="250px"></td>
+		{% if goods.11.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.11.image_2 %}
+			<img src="{{ goods.11.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.11.image_3 %}
+			<img src="{{ goods.11.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.11.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.11.old_price %}
+					<s>{{ goods.11.old_price }}</s>
+				{% else %}
+					{{ goods.11.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.11.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.11.id0|slugify }}" data-title="{{ goods.11.caption }}" data-price="{{ goods.11.price|floatformat:'0'|slugify }}" data-img="{{ goods.11.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line3"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.12 %}
+    <div id="z12" class="link">
+     <a href="#line4"></a>
+      <div id="okno12">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.12.image.url }}" width="250px" height="250px"></td>
+		{% if goods.12.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.12.image_2 %}
+			<img src="{{ goods.12.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.12.image_3 %}
+			<img src="{{ goods.12.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.12.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.12.old_price %}
+					<s>{{ goods.12.old_price }}</s>
+				{% else %}
+					{{ goods.12.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.12.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.12.id0|slugify }}" data-title="{{ goods.12.caption }}" data-price="{{ goods.12.price|floatformat:'0'|slugify }}" data-img="{{ goods.12.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line4"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.13 %}
+    <div id="z13" class="link">
+     <a href="#line4"></a>
+      <div id="okno13">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.13.image.url }}" width="250px" height="250px"></td>
+		{% if goods.13.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.13.image_2 %}
+			<img src="{{ goods.13.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.13.image_3 %}
+			<img src="{{ goods.13.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.13.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.13.old_price %}
+					<s>{{ goods.13.old_price }}</s>
+				{% else %}
+					{{ goods.13.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.13.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.13.id0|slugify }}" data-title="{{ goods.13.caption }}" data-price="{{ goods.13.price|floatformat:'0'|slugify }}" data-img="{{ goods.13.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line4"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.14 %}
+    <div id="z14" class="link">
+     <a href="#line4"></a>
+      <div id="okno14">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.14.image.url }}" width="250px" height="250px"></td>
+		{% if goods.14.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.14.image_2 %}
+			<img src="{{ goods.14.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.14.image_3 %}
+			<img src="{{ goods.14.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.14.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.14.old_price %}
+					<s>{{ goods.14.old_price }}</s>
+				{% else %}
+					{{ goods.14.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.14.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.14.id0|slugify }}" data-title="{{ goods.14.caption }}" data-price="{{ goods.14.price|floatformat:'0'|slugify }}" data-img="{{ goods.14.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line4"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.15 %}
+    <div id="z15" class="link">
+     <a href="#line4"></a>
+      <div id="okno15">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.15.image.url }}" width="250px" height="250px"></td>
+		{% if goods.15.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.15.image_2 %}
+			<img src="{{ goods.15.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.15.image_3 %}
+			<img src="{{ goods.15.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.15.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.15.old_price %}
+					<s>{{ goods.15.old_price }}</s>
+				{% else %}
+					{{ goods.15.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.15.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.15.id0|slugify }}" data-title="{{ goods.15.caption }}" data-price="{{ goods.15.price|floatformat:'0'|slugify }}" data-img="{{ goods.15.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line4"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.16 %}
+    <div id="z16" class="link">
+     <a href="#line5"></a>
+      <div id="okno16">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.16.image.url }}" width="250px" height="250px"></td>
+		{% if goods.16.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.16.image_2 %}
+			<img src="{{ goods.16.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.16.image_3 %}
+			<img src="{{ goods.16.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.16.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.16.old_price %}
+					<s>{{ goods.16.old_price }}</s>
+				{% else %}
+					{{ goods.16.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.16.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.16.id0|slugify }}" data-title="{{ goods.16.caption }}" data-price="{{ goods.16.price|floatformat:'0'|slugify }}" data-img="{{ goods.16.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line5"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.17 %}
+    <div id="z17" class="link">
+     <a href="#line5"></a>
+      <div id="okno17">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.17.image.url }}" width="250px" height="250px"></td>
+		{% if goods.17.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.17.image_2 %}
+			<img src="{{ goods.17.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.17.image_3 %}
+			<img src="{{ goods.17.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.17.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.17.old_price %}
+					<s>{{ goods.17.old_price }}</s>
+				{% else %}
+					{{ goods.17.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.17.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.17.id0|slugify }}" data-title="{{ goods.17.caption }}" data-price="{{ goods.17.price|floatformat:'0'|slugify }}" data-img="{{ goods.17.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line5"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.18 %}
+    <div id="z18" class="link">
+     <a href="#line5"></a>
+      <div id="okno18">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.18.image.url }}" width="250px" height="250px"></td>
+		{% if goods.18.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.18.image_2 %}
+			<img src="{{ goods.18.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.18.image_3 %}
+			<img src="{{ goods.18.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.18.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.18.old_price %}
+					<s>{{ goods.18.old_price }}</s>
+				{% else %}
+					{{ goods.18.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.18.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.18.id0|slugify }}" data-title="{{ goods.18.caption }}" data-price="{{ goods.18.price|floatformat:'0'|slugify }}" data-img="{{ goods.18.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line5"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+{% if goods.19 %}
+    <div id="z19" class="link">
+     <a href="#line5"></a>
+      <div id="okno19">
+        <table>
+		<tr>
+		<td align="left"><img src="{{ goods.19.image.url }}" width="250px" height="250px"></td>
+		{% if goods.19.use_images == True %}
+		<td width="70px" valign="top">
+			{% if goods.19.image_2 %}
+			<img src="{{ goods.19.image_2.url }}" width="70px" height="70px">
+			{% endif %}
+			<br><p>
+			{% if goods.19.image_3 %}
+			<img src="{{ goods.19.image_3.url }}" width="70px" height="70px">
+			{% endif %}
+		</td>
+		{% endif %}
+		<td width="20px"></td>
+		<td valign="center" align="justify" cellpadding="5">{{ goods.19.description }}</td>
+		</tr>
+		</table>
+
+		<table width="100%">
+		<tr>
+			<td class="sub"><b><font color="#777676" size="2px">
+				{% if goods.19.old_price %}
+					<s>{{ goods.19.old_price }}</s>
+				{% else %}
+					{{ goods.19.caption }}
+				{% endif %}
+			</font><br><font color="#0e94c7" size="4px">{{ goods.19.price }} ₽</b></font></td>
+			<td>
+<button class="add_item" data-id="{{ goods.19.id0|slugify }}" data-title="{{ goods.19.caption }}" data-price="{{ goods.19.price|floatformat:'0'|slugify }}" data-img="{{ goods.19.image.url }}">
+	Добавить в заказ
+			</button></td>
+		</tr>
+		</table>
+		<br>
+        <a href="#line5"><span class="close"></span></a>
+
+      </div>
+    </div>
+{% endif %}
+  

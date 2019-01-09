@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Подарки из стекла - Aruna-Craft</title>
+{% load static %}
+<link href='{% static "main.css" %}' rel="stylesheet" type="text/css">
+<link href='{% static "css/jqcart.css" %}' rel="stylesheet" type="text/css">
+<script src='{% static "js/jquery-1.11.3.min.js" %}'></script>
+<script src='{% static "js/jqcart.min.js" %}'></script>
+
+<script>
+$(function(){
+	'use strict';	
+	$.jqCart({
+			buttons: '.add_item',
+			handler: '{% static "php/handler.php" %}',
+			cartLabel: '.label-place',
+			visibleLabel: true,
+			openByAdding: false,
+			currency: '&euro;'
+	});	
+	$('#open').click(function(){
+		$.jqCart('openCart'); 
+	});
+	$('#clear').click(function(){
+		$.jqCart('clearCart');
+	});	
+});
+</script>
+
+</head>
+<body>
+
+<div class = "all">
+	<table id = "maintable" align="center">
+		<tr>
+			<td class="logo" align="left">
+				<a href="index.html"><img src='{% static "logo.png" %}' id="logoimage" /></a>
+			</td>
+			<td class="middle_head" align="center">
+				<img src='{% static "images/head.png" %}' id="headimage" />
+			</td>
+			<td align="center">
+				8 (925) 851-90-30<br>
+				Ярослав Толкачев
+			</td>
+			<td class="afterlogo">
+				<div class="label-place"></div>
+			</td>
+		</tr>
+		<tr><td colspan="4" class="mainblock">
+			<div id="menulayer">
+				<ul class="menu">
+					<li><a href="index.html">Главная</a>
+					</li>
+					<li><a href="florarium.html">Флорариумы</a>
+						<ul class="submenu">
+							<li><a href="empty.html">Пустые формы</a></li>
+							<li><a href="full.html">С наполнением</a></li>
+						</ul>
+					</li>
+					<li><a href="decor.html" class="current">Подарки из стекла</a>
+						<ul class="submenu">
+							<li><a href="toys.html">Ёлочные игрушки</a></li>
+							<li><a href="vpictures.html">Витражные картины</a></li>
+							<li><a href="souvenirs.html">Сувениры из стекла</a></li>
+							<li><a href="light.html">Светильники</a></li>
+						</ul>
+					</li>
+					<li><a href="master.html">Мастер-классы</a>
+					<!--
+						<ul class="submenu">
+							<li><a href="#">nothing</a></li>
+							<li><a href="#">nothing</a></li>
+							<li><a href="#">nothing</a></li>
+						</ul>
+					-->
+					</li>
+					<li><a href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</td></tr>
+		<tr><td><p>&nbsp;</td></tr>
+		<tr><td colspan="4" class="itemsblock">
+			<p class="caption">Подарки из стекла</p>
+			<table id="itemstable">
+			<tr class="item_images">
+				{% if linker1 %}
+				<td class="items"><a href = "{{ linker1.link }}">
+                    <img src="{{ linker1.image.url }}" width="333px" height="333px" alt="{{ linker1.alt }}">
+                </a></td>
+				{% endif %}
+				{% if linker2 %}
+				<td class="items"><a href = "{{ linker2.link }}">
+                    <img src="{{ linker2.image.url }}" width="333px" height="333px" alt="{{ linker2.alt }}">
+                </a></td>
+				{% endif %}
+				{% if linker3 %}
+				<td class="items"><a href = "{{ linker3.link }}">
+                    <img src="{{ linker3.image.url }}" width="333px" height="333px" alt="{{ linker3.alt }}">
+                </a></td>
+				{% endif %}
+			</tr>
+			<tr class="item_subs">
+				{% if linker1 %}
+				<td class="sub"><b><a href = "{{ linker1.link }}">{{ linker1.text }}</a></b></td>
+				{% endif %}
+				{% if linker2 %}
+				<td class="sub"><b><a href = "{{ linker2.link }}">{{ linker2.text }}</a></b></td>
+				{% endif %}
+				{% if linker3 %}
+				<td class="sub"><b><a href = "{{ linker3.link }}">{{ linker3.text }}</a></b></td>
+				{% endif %}
+			</tr>
+			</table>
+		</td></tr>
+		<tr><td colspan="3"><p></td></tr>
+	</table>
+</div>
+
+  
+</body>
+</html>
